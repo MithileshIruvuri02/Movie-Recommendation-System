@@ -8,7 +8,7 @@ def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?language=en-US".format(movie_id)
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyYmI4OTc0YmUyYmIwNDkxYzg3ZTJlYzczYjIxNzhhYyIsInN1YiI6IjY0YTdkYmRlZjA1NmQ1MDBjNWZkNWZlOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ezwUlhUOGd7_xqtxrPUdwxl2o3KExAFxTIavReYm-uE"
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMmRiZWY3ZDdhZTI0NWQ2OTZmYTA3MzhkMDM5ZjdjNyIsInN1YiI6IjY1ZTE3YzNjOWRlZTU4MDE2MzdjNDE2YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AkXLDAxiykkTNTWjm1bQPHTAT6PTtoUksTr1olkR51U"
     }
     response = requests.get(url, headers=headers)
     data = response.json()
